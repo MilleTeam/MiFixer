@@ -1,0 +1,25 @@
+name: MiFixer
+
+version: 1.0.0
+author: Millesant
+
+main: me.millesant.MiFixer
+api: 1.0.0
+
+commands:
+  worldfixer:
+    description: WorldFixer main command
+    permission: wf.command
+    aliases: [ "wf" ]
+
+permissions:
+  wf.command:
+    description: "Allows access to all WorldFixer commands"
+    default: op
+    children:
+      wf.command.wand:
+        description: "Allows using the wand command"
+        default: op
+      wf.command.fix:
+        description: "Allows using commands for fixing worlds"
+        default: op
