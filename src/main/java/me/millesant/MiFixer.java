@@ -82,12 +82,6 @@ public final class MiFixer
         String[] args
     )
     {
-        if (!(sender instanceof Player player))
-        {
-            sender.sendMessage(TextFormat.RED + "This command can only be used by players");
-            return true;
-        }
-
         if (!(cmd.getName().equalsIgnoreCase("worldfixer")))
         {
             return false;
